@@ -1,0 +1,1 @@
+include ':main_entry', ':app-base', ':app-home', ':app-play', ':app-settings', ':lib-util'

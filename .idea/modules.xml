@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SingleEntry.iml" filepath="$PROJECT_DIR$/SingleEntry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-base/app-base.iml" filepath="$PROJECT_DIR$/app-base/app-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-home/app-home.iml" filepath="$PROJECT_DIR$/app-home/app-home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-play/app-play.iml" filepath="$PROJECT_DIR$/app-play/app-play.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-settings/app-settings.iml" filepath="$PROJECT_DIR$/app-settings/app-settings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/buildSrc.iml" filepath="$PROJECT_DIR$/buildSrc/buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-util/lib-util.iml" filepath="$PROJECT_DIR$/lib-util/lib-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main_entry/main_entry.iml" filepath="$PROJECT_DIR$/main_entry/main_entry.iml" />
+    </modules>
+  </component>
+</project>

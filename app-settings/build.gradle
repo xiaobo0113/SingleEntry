@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion Integer.valueOf(COMPILE_SDK_VERSION)
+
+    defaultConfig {
+        minSdkVersion Integer.valueOf(MIN_SDK_VERSION)
+        targetSdkVersion Integer.valueOf(TARGET_SDK_VERSION)
+        versionCode 1
+        versionName "1.0"
+
+        resourcePrefix "app_settings"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$APP_COMPAT_VERSION"
+    testImplementation "junit:junit:$JUNIT_VERSION"
+    androidTestImplementation "com.android.support.test:runner:$RUNNER_VERSION"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$ESPRESSO_CORE_VERSION"
+
+    // add libraries to build longer
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.1'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'de.greenrobot:eventbus:2.4.0'
+    implementation 'com.facebook.fresco:fresco:1.8.0'
+    implementation 'com.allenliu:checkversionlib:1.0.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.13'
+
+    implementation project(':app-base')
+}

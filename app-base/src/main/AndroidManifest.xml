@@ -1,0 +1,16 @@
+<manifest
+    package="xiaobo0113.xiaobo.com.app_base"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".MainApplication">
+        <meta-data
+            android:name="SUB_APPLICATIONS"
+            android:value="
+            xiaobo0113.xiaobo.com.app_home.AppHomeApplication;
+            xiaobo0113.xiaobo.com.app_play.AppPlayApplication;
+            xiaobo0113.xiaobo.com.app_settings.AppSettingsApplication;
+            ">
+        </meta-data>
+    </application>
+</manifest>

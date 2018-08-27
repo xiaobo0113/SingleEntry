@@ -1,0 +1,8 @@
+<manifest
+    package="xiaobo0113.xiaobo.com.app_home"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity android:name=".AppHomeMainActivity"/>
+    </application>
+</manifest>

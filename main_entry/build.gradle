@@ -1,0 +1,11 @@
+Properties properties = new Properties()
+properties.load(rootProject.file("local.properties").newDataInputStream())
+def useLocalBuild = "true"== properties.getProperty("USE_LOCAL_BUILD", "false")
+
+if (useLocalBuild) {
+    println("build with local_build.gradle")
+    apply from: "local_build.gradle"
+} else {
+    println("build with real_build.gradle")
+    apply from: "real_build.gradle"
+}
