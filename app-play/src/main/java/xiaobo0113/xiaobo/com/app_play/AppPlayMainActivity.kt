@@ -3,7 +3,9 @@ package xiaobo0113.xiaobo.com.app_play
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import xiaobo0113.xiaobo.com.app_base.BaseActivity
+import java.io.File
 
 class AppPlayMainActivity : BaseActivity() {
 
@@ -19,9 +21,13 @@ class AppPlayMainActivity : BaseActivity() {
         textView.text = "now is playing: $fileName"
         setContentView(textView)
 
-        mPlayer.setDataSource(filePath)
-        mPlayer.prepare()
-        mPlayer.start()
+        if (File(filePath).exists()) {
+            mPlayer.setDataSource(filePath)
+            mPlayer.prepare()
+            mPlayer.start()
+        } else {
+            Toast.makeText(this, "$filePath file not exists.", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onDestroy() {
